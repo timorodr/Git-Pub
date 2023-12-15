@@ -8,8 +8,16 @@
 <body>
     <h1>Welcome to gitPub</h1>
 
+    <ul>
+        <% for (let i = 0; i < drinks.length; i++) { %>
+            
+            <li><%= drinks[i].name.charAt(0).toUpperCase() + drinks[i].name.slice(1)%></li>
+
+      <%  } %>
+    </ul>
+
     <style type="text/css">
-        
+
     body {
         color: blanchedalmond;
         background-color: steelblue;

@@ -11,10 +11,12 @@ app.get("/", (req, res) => {
 })
 
 app.get("/drinks", (req, res) => {
-    res.render("index.ejs")
+    
+  
+    res.render("index.ejs", {drinks})
 })
 
-
+console.log(drinks)
 
 
 
