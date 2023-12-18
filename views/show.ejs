@@ -8,11 +8,77 @@
 <body>
     <h1>At foo bar</h1>
     <h2><%= drink.name %></h2>
-    <img src= <%= drink.image.concat(".png") %>  > // concat to add anything to end can pass variable of text
-    <h3><%= drink.price %></h3>
+    <img src= <%= drink.image.concat(".png") %>  >
+    <h3>$ <%= drink.price %></h3>
     <a href="/drinks">Back</a>
 
 
+    <style type="text/css">
+
+    html {
+        height: 100%;
+        background-image: url("https://img.freepik.com/free-vector/colorful-futuristic-background-with-shiny-particles_52683-42650.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;   
+        
+    }
+
+    body {
+        background-size: contain;
+    }
+    h1, h2, h3 {
+        color: blanchedalmond;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 35pt;
+    }
+
+    h2 {
+        font-size: 16pt;
+    }
+
+    h3 {
+        font-size: 16pt;
+    }
+
+
+    img {
+        border-radius: 50px;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    a {
+        padding: 1rem;
+        text-align: right;
+        color: white;
+        border: ridge red;
+        border-radius: 10rem;
+        display: flex;
+        background-color: black;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+
+    a:hover {
+        background: linear-gradient(45deg, rgba(34,164,116,1) 0%, rgba(41,47,143,1) 100%);
+    }
+
+    a:active {
+        box-shadow: 2px 2px 5px #fc894d;
+    }
     
+
+
+
+    </style>
 </body>
 </html>

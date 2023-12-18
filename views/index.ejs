@@ -6,22 +6,67 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Welcome to gitPub</h1>
+    <main>
+        <h1 class="welcome">Welcome to gitPub</h1>
 
-    <ul>
-        <% for (let i = 0; i < drinks.length; i++) { %>
-            
-            <a href="/drinks/<%= i %>"><li><%= drinks[i].name.charAt(0).toUpperCase() + drinks[i].name.slice(1)%></li></a>
+        <ul class="menu">
+            <% for (let i = 0; i < drinks.length; i++) { %>
+                
+                <a href="/drinks/<%= i %>"><li class="drink-name"><%= drinks[i].name.charAt(0).toUpperCase() + drinks[i].name.slice(1)%></li></a>
 
-      <%  } %>
-    </ul>
-
+        <%  } %>
+        </ul>
+    </main>
     <style type="text/css">
+
+    html {
+        height: 100%
+    }
 
     body {
         color: blanchedalmond;
-        background-color: steelblue;
+        background-color: black;
+        font-size: 20pt;
+        text-align: right;
+        background-image: url("https://cdn.openart.ai/uploads/image_1670879692550_1024.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;     
     }
+
+    .welcome {
+        font-size: 110px;
+    }
+
+    .menu {
+        color: blanchedalmond;
+        text-align: center;
+        margin-left: 60%;
+        list-style-type: none;
+        position: relative;
+    }
+
+    .drink-name {
+        padding: 1rem;
+        text-align: right;
+        color: white;
+        border: ridge red;
+        border-radius: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+
+    }
+
+    .drink-name:hover {
+        background: linear-gradient(45deg, rgba(34,164,116,1) 0%, rgba(41,47,143,1) 100%);
+    }
+
+    .drink-name:active {
+        box-shadow: 2px 2px 5px #fc894d;
+    }
+
     </style>
 </body>
 </html>
